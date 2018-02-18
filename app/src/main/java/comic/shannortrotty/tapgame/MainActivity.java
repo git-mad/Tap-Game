@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        playerOneScore = ((TextView) findViewById(R.id.textView_main_activity_player1));
-        playerTwoScore = ((TextView) findViewById(R.id.textView_main_activity_player2));
+        playerOneScore = ((TextView) findViewById(R.id.textView_main_activity_player1_score));
+        playerTwoScore = ((TextView) findViewById(R.id.textView_main_activity_player2_score));
         playerOneButton = ((Button) findViewById(R.id.btn_main_activity_player1));
         playerTwoButton = ((Button) findViewById(R.id.btn_main_activity_player2));
 

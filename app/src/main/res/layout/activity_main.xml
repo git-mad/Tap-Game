@@ -47,7 +47,7 @@
         android:rotation="-90"
         android:layout_marginBottom="5dp"
         style="@android:style/TextAppearance.DeviceDefault.Medium"
-        android:id="@+id/textView_main_activity_player1"
+        android:id="@+id/textView_main_activity_player1_score"
         android:layout_above="@+id/view_bar"
         android:layout_marginLeft="10dp"
         android:layout_alignParentStart="true" />
@@ -58,10 +58,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rotation="-90"
-        android:id="@+id/textView_main_activity_player2"
+        android:id="@+id/textView_main_activity_player2_score"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
         android:layout_below="@+id/view_bar"
         android:layout_alignParentStart="true"
         />
+
+    <TextView
+        android:id="@+id/text_view_main_activity_player1_header"
+        android:rotation="180"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_main_activity_player1_score"
+        android:layout_centerHorizontal="true"
+        android:text="Player 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="Player 1" />
+
+    <TextView
+        android:id="@+id/text_view_main_activity_player2_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_main_activity_player2_score"
+        android:layout_centerHorizontal="true"
+        android:text="Player 2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:text="Player 2" />
 </RelativeLayout>
