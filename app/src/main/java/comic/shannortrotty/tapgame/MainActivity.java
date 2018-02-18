@@ -20,44 +20,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        playerOneScore = ((TextView) findViewById(R.id.textView_main_activity_player1_score));
-        playerTwoScore = ((TextView) findViewById(R.id.textView_main_activity_player2_score));
-        playerOneButton = ((Button) findViewById(R.id.btn_main_activity_player1));
-        playerTwoButton = ((Button) findViewById(R.id.btn_main_activity_player2));
+        // TODO 1: Initialize the TextViews for Player 1 and 2's score and their respective Button
 
 
-        playerOneScore.setText((String.valueOf("0")));
-        playerTwoScore.setText(String.valueOf("0"));
+        // TODO 2: Initialize the score for Player 1 and 2 to 0
 
-        playerOneButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int value = Integer.valueOf(playerOneScore.getText().toString());
-                value++;
-                if( value >= WINNING_SCORE){
-                    Toast.makeText(MainActivity.this, "Player one Wins!", Toast.LENGTH_SHORT).show();
-                    playerOneScore.setText((String.valueOf("0")));
-                    playerTwoScore.setText(String.valueOf("0"));
-                }else{
-                    playerOneScore.setText(String.valueOf(value));
-                }
-            }
-        });
 
-        playerTwoButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int value = Integer.valueOf(playerTwoScore.getText().toString());
-                value++;
-                if (value >= WINNING_SCORE){
-                    Toast.makeText(MainActivity.this, "Player Two Wins!", Toast.LENGTH_SHORT).show();
-                    playerOneScore.setText((String.valueOf("0")));
-                    playerTwoScore.setText(String.valueOf("0"));
-                }else{
-                    playerTwoScore.setText(String.valueOf(value));
-                }
-            }
-        });
+        /*
+         * TODO 3: Add an OnClickListener to Player 1's button so the score increases by 1 each
+         * time the button is clicked. If the score hits WINNING_SCORE, create a toast that
+         * alerts the player of the winner and reset both scores to 0.
+         */
+
+
+        /*
+         * TODO 4: Add an OnClickListener to Player 2's button so the score increases by 1 each
+         * time the button is clicked. If the score hits WINNING_SCORE, create a toast that
+         * alerts the player of the winner and reset both scores to 0.
+         */
+
 
     }
 }
