@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TapGame</string>
+    <string name="tap_text">Tap!!</string>
 </resources>
